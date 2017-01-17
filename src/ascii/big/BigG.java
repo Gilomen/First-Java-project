@@ -7,7 +7,7 @@ public class BigG extends AbstractCaracter implements CaracterInterface
 {
     public BigG (FontBig font) //constructor; we want to receive the font from FontBig
     {
-        this.definition = new char[font.getLineHeight()][7]; //height and width, font.AbstractFont peut nous distribuer la hauteur
+        this.definition = new char[font.getLineHeight()][7]; //height and width, height coming from font.AbstractFont 
         
         this.definition[0][2] = font.getCH();
         this.definition[0][6] = font.getSymbolDefault();
