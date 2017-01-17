@@ -49,7 +49,7 @@ public class FontBig extends AbstractFont implements FontBigInterface
         }
         else 
         {
-            return new BigG(this);
+            return new BigG(this);      //possible because only 2 letters
         }
         
         
