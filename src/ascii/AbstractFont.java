@@ -12,7 +12,7 @@ public abstract class AbstractFont extends font.AbstractFont
 	
 	protected AbstractFont() //constructor
 	{
-		super(); //call to parent constructor (in package font)
+		super(); 		//call to parent constructor (in package font)
 		this.initSymbolDefault();
 	}
 	
