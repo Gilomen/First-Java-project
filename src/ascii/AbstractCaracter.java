@@ -2,11 +2,11 @@ package ascii;
 
 public abstract class AbstractCaracter
 {
-    //attributs
+    //attributes
     
     protected char[][] definition;
     
-    //pas de constructeur ici!
+    //no constructor here
     
     //methods
     
