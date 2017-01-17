@@ -1,0 +1,68 @@
+package ascii;
+
+import ascii.big.FontBig;
+import ascii.big.FontBigInterface;
+import font.CaracterInterface;
+
+public class Ascii 
+{
+	
+   public static void main (String[] args) //static n'a aucune référence à "this"
+   {
+       
+       
+       FontBigInterface font = new FontBig();
+       
+       CaracterInterface[] caracterCollection = new CaracterInterface[2]; //mention number of caracters in caracterCollection
+       
+       caracterCollection[0]= font.getCaracter('b'); //on peut mettre n'importe quelle lettre //first caracter has number 0
+       caracterCollection[1]= font.getCaracter('g');
+               
+         
+       
+       
+       char current = font.getSymbolDefault();
+       
+     //triple boucle
+       
+     //afficher les lignes
+       for (int i=0; i<font.getLineHeight(); i++)
+       {
+       
+   
+           //afficher les lettres
+           for (int j=0; j<caracterCollection.length; j++)
+           {
+               
+               char[][] definition = caracterCollection[j].toAscii();
+               
+               //afficher les sympoles des lettres
+               for (int k=0; k<definition[i].length; k++) //variable dans condition toujours int
+               {
+                   
+                   
+                   //condition pour iterer un symbole jusqu'au prochain symbole indique 
+                   if(Character.MIN_VALUE != definition[i][k]) 
+                   {
+                   current = definition[i][k];
+                   }
+               
+                   //rajouter currentSymbol au output
+//                   definition[i][k] += current;
+                   
+               System.out.print(current);
+                   
+               }
+           
+           }
+
+           
+           System.out.println(" ");
+       
+       }
+
+
+	
+		
+   }
+}
