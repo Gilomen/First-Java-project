@@ -8,7 +8,7 @@ public interface FontBigInterface extends FontInterface
     
     //methods
     
-    public char getCV(); //in an interface no need for body {} or bloc d'instruction
+    public char getCV(); 
     
     public char getCH();
     
