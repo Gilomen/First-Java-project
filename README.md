@@ -16,7 +16,7 @@ The package font contains one class (AbstractFont) and 2 interfaces (FontInterfa
 # src/ascii
 
 The package ascii depends on the package font. Its class AbstractFont and interface FontInterface extend the AbstractFont and FontInterface in the package font. 
-The package ascii also contains the classes AbstractCaracter and Ascii. The class Ascii contains the main method for printing the two letters in the font Big, consisting of 3 loops:
+The package ascii also contains the classes AbstractCaracter and Ascii. The class Ascii contains the main method for printing the two letters in the font Big, consisting of 3 interrelated loops:
 - 1 for the letters
 - 1 for the lines
 - 1 for the symbols in the lines
