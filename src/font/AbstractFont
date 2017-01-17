@@ -10,7 +10,7 @@ public abstract class AbstractFont
 	
 	//methods
 	
-	protected abstract void initLineHeight(); //visibility always first
+	protected abstract void initLineHeight(); 
 	
 	protected abstract CaracterInterface createCaracter(char caracter);
 	
