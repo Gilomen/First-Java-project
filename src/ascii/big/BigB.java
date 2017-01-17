@@ -10,7 +10,7 @@ public class BigB extends AbstractCaracter implements CaracterInterface
     {
         //affect values
         
-        this.definition = new char[font.getLineHeight()][7]; //hauteur et largeur, font.AbstractFont peut nous distribuer la hauteur
+        this.definition = new char[font.getLineHeight()][7]; //definition of height and width, height coming from font.AbstractFont
         
         
         this.definition[0][0] = font.getSymbolDefault();
