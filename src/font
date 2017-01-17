@@ -1,0 +1,37 @@
+package font;
+
+public abstract class AbstractFont 
+{
+	//attributes
+	
+	protected byte lineHeight;
+	
+	protected CaracterInterface[] caracter; //definition of a new data type: CaracterInterface
+	
+	//methods
+	
+	protected abstract void initLineHeight(); //visibility always first
+	
+	protected abstract CaracterInterface createCaracter(char caracter);
+	
+	protected AbstractFont() //constructor
+	{
+		this.initLineHeight(); //affectation d'une valeur, il faut initialiser tous les attributs déclarés
+		this.caracter = new CaracterInterface[255]; 
+	}
+	
+	public byte getLineHeight()
+	{
+		return this.lineHeight; //this. = the manipulated object
+	}
+	
+	public CaracterInterface getCaracter(char caracter)
+	{
+		if (null == this.caracter[caracter])
+		{
+			this.caracter[caracter] = this.createCaracter(caracter);
+		}
+		return this.caracter[caracter];
+		
+	}
+}
