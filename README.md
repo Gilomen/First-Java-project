@@ -7,7 +7,7 @@ The project runs on eclipse and has 3 packages:
 - ascii
 - big.ascii
 
-It is meant to be extendable to other fonts and symbols.
+It is meant to be extendable to other fonts and symbols. The program is based on a UML class diagram.
 
 ### src/font
 
